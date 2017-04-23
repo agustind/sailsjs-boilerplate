@@ -1,0 +1,12 @@
+<% if(pages){ %>
+	
+	<% for ( page of pages ) { %>
+		<%= page.title %> <br>
+		<%= page.content %> <br>
+		<%= page.user.email %> <br>
+		<hr>
+	<% } %>
+
+<% }else{ %>
+	There are no pages
+<% } %>
